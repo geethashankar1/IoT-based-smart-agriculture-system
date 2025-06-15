@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Agriculture Dashboard</title>
+  <style>
+    body { font-family: Arial; background: #f0f0f0; padding: 20px; }
+    .card { background: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body>
+  <h2>🌿 Smart Agriculture Dashboard</h2>
+  <div class="card">
+    <p><b>Temperature:</b> {{ data.temperature }} °C</p>
+    <p><b>Humidity:</b> {{ data.humidity }} %</p>
+    <p><b>Soil Moisture:</b> {{ data.moisture }} %</p>
+    <p><b>Pump Status:</b> {{ 'ON' if data.pump == 1 else 'OFF' }}</p>
+  </div>
+</body>
+</html>
